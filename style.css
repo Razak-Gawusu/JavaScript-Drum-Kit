@@ -1,0 +1,59 @@
+*, *::after, *::before{
+    box-sizing: border-box;
+}
+
+html{
+    background: rgb(73, 73, 73);
+    background-image: url(./images/music_4.jpg);
+    background-size: cover;
+    font-size: 10px;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+
+.keys{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+}
+
+.key{
+    background-color: rgba(0, 0, 0, 0.4);
+    font-size: 1.5rem;
+    border: solid 0.25em black;
+    border-radius: 0.5em;
+    padding: 1em;
+    margin: 2em;
+    width: 100%;
+    text-align: center;
+    text-shadow: 0 0 0.5em black;
+    color: white;
+    transition: all 0.1s ease;
+}
+
+.playing{
+    transform: scale(1.25);
+    border-color: rgb(255, 217, 3);
+    box-shadow: 0 0 0.5em rgb(255, 217, 3);
+}
+
+kbd{
+    text-transform: uppercase;
+    font-size: 5rem;
+    font-family: 'League Gothic', sans-serif;
+}
+
+.sound{
+    display: block;
+    padding-top: 0.5em;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: rgb(255, 217, 3);
+    font-family: 'League Gothic', sans-serif;
+}
